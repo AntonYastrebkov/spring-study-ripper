@@ -18,7 +18,6 @@ public class InjectRandomIntAnnotationBeanPostProcessor implements BeanPostProce
                 int max = annotation.max();
                 Random random = new Random();
                 int i = min + random.nextInt(max - min);
-                System.out.println(min + " " + i + " " + max);
                 field.setAccessible(true);
                 ReflectionUtils.setField(field, bean, i);
             }
