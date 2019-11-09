@@ -7,6 +7,8 @@
   http://www.springframework.org/schema/aop
   https://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <bean class="com.epam.spring.ripper.InjectRandomIntAnnotationBeanPostProcessor" />
+
     <bean class="com.epam.spring.ripper.TerminatorQuoter" id="terminatorQuoter">
         <property name="message" value="I'll be back"/>
     </bean>
