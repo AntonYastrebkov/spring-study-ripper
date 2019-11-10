@@ -10,6 +10,7 @@
            http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
     <context:annotation-config/>
+    <bean class="com.epam.spring.ripper.DeprecationHandlerBeanFactoryPostProcessor" />
     <bean class="com.epam.spring.ripper.PostProxyInvokerContextListener" />
     <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
     <bean class="com.epam.spring.ripper.ProfilingHandlerBeanPostProcessor" />
