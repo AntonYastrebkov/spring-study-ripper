@@ -10,7 +10,7 @@ import java.util.Random;
 @ComponentScan(basePackages = "com.epam.spring.screensaver")
 public class Config {
     @Bean
-    @Scope("prototype")
+    @Scope("periodical")
     public Color color() {
         Random random = new Random();
         return new Color(
